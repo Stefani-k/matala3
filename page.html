@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Component By Function</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #deecf9; /* צבע תכלת */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        /* כותרת העמוד */
+        .header {
+            margin: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(86, 86, 166);
+        }
+
+        /* עיצוב הספר */
+        .book-cover {
+            width: 300px;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            background-color: white;
+        }
+
+        /* פס עליון - אפור בהיר */
+        .top-section {
+            background-color: #e6e6e6;
+            color: black;
+            font-size: 12px;
+            text-align: right;
+            padding: 10px;
+            height: 15%;
+            display: flex;
+            align-items: center;
+        }
+
+        /* פס אמצעי - לבן */
+        .middle-section {
+            background-color: #ffffff;
+            color: black;
+            text-align: right;
+            padding: 20px;
+            height: 25%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .middle-section .title {
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 1.2; 
+        }
+
+        /* פס תחתון - צהוב */
+        .bottom-section {
+            background-color: #ffd700;
+            color: black;
+            text-align: right;
+            padding: 20px;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bottom-section .js-text {
+            font-size: 110px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* עיצוב הטקסט מתחת לספר */
+        .book-description {
+            margin-top: 10px;
+            text-align: center;
+            color: rgb(86, 86, 166);
+        }
+
+        .book-description .author {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .book-description .subtitle {
+            font-size: 14px;
+            margin: 5px 0;
+            color: black;
+        }
+
+        /* עיצוב ה-footer */
+        footer {
+            background-color: #deecf9;
+            color: rgb(86, 86, 166);
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Book Component By Function</div>
+
+    <div class="book-cover">
+        <div class="top-section">Kyle Simpson</div>
+        
+        <div class="middle-section">
+            <div class="title">
+                SCOPE &<br>
+                CLOSURES
+            </div>
+        </div>
+        
+        <div class="bottom-section">
+            <div class="js-text">JS</div>
+        </div>
+    </div>
+
+    <div class="book-description">
+        <div class="author">By Kyle Simpson</div>
+        <div class="subtitle">Parts of the language that many JavaScript programmers simply avoid.</div>
+    </div>
+
+    <footer>© 2024 Stefani K</footer>
+</body>
+</html>
